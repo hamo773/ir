@@ -123,11 +123,6 @@ def DRL_thread():
         f = open(path, 'w')
         f.writelines(str(reward_list))
         f.close()
-        change_path_list.append(int(change_path_counter))
-        path = 'changepath.txt'
-        f = open(path, 'w')
-        f.writelines(str(change_path_list))
-        f.close()
         reward_list_bwd.append(int(reward_all_bwd))
         path = 'output_bwd.txt'
         f = open(path, 'w')
