@@ -1,4 +1,5 @@
 生成流量腳本請參考traffic_generator內的readme
+
 執行geant.py  
 因為mininet需要root權限，因此需要sudo  
 sudo python geant.py
