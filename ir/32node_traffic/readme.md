@@ -1,4 +1,5 @@
 流量腳本參考traffic_generator內的readme
+
 執行32node.py  
 因為mininet需要root權限，因此需要sudo  
 sudo python 32node.py
