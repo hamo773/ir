@@ -106,7 +106,6 @@ def DRL_thread():
                     
 
         action_memory.append(all_agent_action_list)
-        print(all_agent_action_list[0])
         reward_memory = all_agent_reward_list 
         with open('./drl_paths.json','w') as json_file:
             json.dump(drl_paths, json_file, indent=2)
@@ -115,7 +114,6 @@ def DRL_thread():
                 action_memory.pop(0)
             else:
                 madqn_agents.append_sample(state_memory,action_memory[0], state,all_agent_delta_reward_list,path_vector_memory)   #(s2,a1,p1,r3-r2,s3)
-                print(action_memory[0][0])
                 action_memory.pop(0)
         state_memory = state
         path_vector_memory = path_vector
