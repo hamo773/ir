@@ -127,7 +127,7 @@ def DRL_thread():
             f = open(path, 'w')
             f.writelines(str(dqn_loss_list))
             f.close()
-        if step == 10:
+        if step == 3000:
             madqn_agents.save_model(SIZE)
             return
 
@@ -175,8 +175,8 @@ def DRL_thread():
         elif epsilon >epsilon_final:
             epsilon -= (0.1 - epsilon_final)/1000
         time_end = time.time()
-        #if time_end - time_in < 10 :
-            #time.sleep(10 - (time_end - time_in)) # wait for monitor period
+        if time_end - time_in < 10 :
+            time.sleep(10 - (time_end - time_in)) # wait for monitor period
 
 
 
