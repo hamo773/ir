@@ -19,4 +19,7 @@ python package requirement
 * matplotlib
 * statistics
 
+```
+pyhon generate_tms.py
+```
 
