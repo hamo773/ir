@@ -20,6 +20,6 @@ python package requirement
 * statistics
 
 ```
-pyhon generate_tms.py
+python generate_tms.py
 ```
 
