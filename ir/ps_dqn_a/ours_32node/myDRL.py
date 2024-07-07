@@ -328,7 +328,7 @@ def path_metrics_to_reward():
                             temp = 1/val
                             cost.append(round(temp, 15))
                         else:
-                            cost.append(1.5)
+                            cost.append(round(1/1.5, 15))
                     paths_metrics_dict[str(i)][str(j)][m][0] = cost
                     paths_metrics_minmax_dict[i][j][m]['max'] = max(paths_metrics_minmax_dict[i][j][m]['max'],max(cost))
                     paths_metrics_minmax_dict[i][j][m]['min'] = min(paths_metrics_minmax_dict[i][j][m]['min'],min(cost))
