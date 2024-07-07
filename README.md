@@ -13,13 +13,6 @@ cd util
 ./install.sh -a
 ```
 
-若發生以下錯誤：
-![image](https://hackmd.io/_uploads/BkLwUUSvC.png)
-輸入以下指令後再執行install 一次
-```
-sudo ln -s /usr/bin/python3 /usr/bin/python
-```
-
 
 安裝完後可以進入terminal確認有無正確安裝
 ```
