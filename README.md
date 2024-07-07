@@ -133,7 +133,7 @@ cd ir
 pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
-開始訓練前須先生成流量腳本，請參考github上32node_traffic內的readme
+開始訓練前須先生成流量腳本，請參考32node_traffic內的readme
 
 進入ir/32node_traffic，執行32node.py，創建mininet拓撲
 ```
