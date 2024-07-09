@@ -135,7 +135,7 @@ class simple_Awareness(app_manager.RyuApp):
         self.logger.info("[Topology Discovery Ok]")
         switch_list = get_switch(self.topology_api_app, None)
         self.create_port_map(switch_list)
-        #time.sleep(0.5)
+        time.sleep(0.5)
         self.switches = [sw.dp.id for sw in switch_list]
         links = get_link(self.topology_api_app, None)
         self.create_interior_links(links)
