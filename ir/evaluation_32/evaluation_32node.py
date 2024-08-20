@@ -4,6 +4,7 @@ import json
 
 
 total=10
+init_num=10
 indicator= np.zeros((total,60,3))
 uti_list = np.zeros((total,60))
 
